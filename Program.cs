@@ -9,7 +9,7 @@ namespace MySQLExample
     //dotnet add package MySql.Data
     public class Program
     {
-       
+
 
         public static void Main(string[] args)
         {
@@ -40,7 +40,7 @@ namespace MySQLExample
             }
 
             Console.WriteLine("Database and table created successfully.");
-            
+
             //aggiunta record
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -51,19 +51,38 @@ namespace MySQLExample
                 using (MySqlCommand cmd = new MySqlCommand(insertDataQuery, connection))
                 {
                     Console.WriteLine("enter name: ");
-                    string name=Console.ReadLine();
+                    string name = Console.ReadLine();
 
                     Console.WriteLine("enter age: ");
-                    int age=Convert.ToInt32(Console.ReadLine());
-                 
+                    int age = Convert.ToInt32(Console.ReadLine());
+
                     cmd.Parameters.AddWithValue("@name", name);
                     cmd.Parameters.AddWithValue("@age", age);
                     cmd.ExecuteNonQuery();
-                    
+
                 }
             }
 
             Console.WriteLine("record add successfully");
+
+            //elimino i dati da db.
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+               
+                string deleteQuery = "DELETE FROM UserIxla WHERE name = 'John';";
+                using (MySqlCommand cmd = new MySqlCommand(deleteQuery, connection))
+                {
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    Console.WriteLine($"Righe eliminate: {rowsAffected}");
+                }
+            }
+
         }
+
+
+
     }
 }
+
