@@ -41,7 +41,7 @@ namespace MySQLExample
 
             Console.WriteLine("Database and table created successfully.");
             
-            
+            //aggiunta record
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
