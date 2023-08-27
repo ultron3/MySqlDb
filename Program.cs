@@ -69,14 +69,32 @@ namespace MySQLExample
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                connection.Open();
-               
-                string deleteQuery = "DELETE FROM UserIxla WHERE name = 'John';";
-                using (MySqlCommand cmd = new MySqlCommand(deleteQuery, connection))
+                try
                 {
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    Console.WriteLine($"Righe eliminate: {rowsAffected}");
+                    connection.Open();
+                    Console.WriteLine("enter the name: ");
+                    string nameDelete = Console.ReadLine();
+
+                    string deleteQuery = $"DELETE FROM db_pharm.userixla WHERE name = {nameDelete};";
+                    using (MySqlCommand cmd = new MySqlCommand(deleteQuery, connection))
+                    {
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        Console.WriteLine($"Righe eliminate: {rowsAffected}");
+                    }
+
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Errore: {ex.Message}");
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+
+
+
             }
 
         }
