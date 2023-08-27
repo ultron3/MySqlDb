@@ -50,10 +50,14 @@ namespace MySQLExample
                 string insertDataQuery = "INSERT INTO UserIxla (name, age) VALUES (@name, @age)";
                 using (MySqlCommand cmd = new MySqlCommand(insertDataQuery, connection))
                 {
-                    cmd.Parameters.AddWithValue("@name", "John Doe");
-                    cmd.Parameters.AddWithValue("@age", 30);
-                    cmd.Parameters.AddWithValue("@name", "John Snow");
-                    cmd.Parameters.AddWithValue("@age", 306);
+                    Console.WriteLine("enter name: ");
+                    string name=Console.ReadLine();
+
+                    Console.WriteLine("enter age: ");
+                    int age=Convert.ToInt32(Console.ReadLine());
+                 
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@age", age);
                     cmd.ExecuteNonQuery();
                     
                 }

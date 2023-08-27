@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj": {}
+    "C:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj": {}
   },
   "projects": {
-    "c:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj": {
+    "C:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj",
+        "projectUniqueName": "C:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj",
         "projectName": "MyDb",
-        "projectPath": "c:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj",
+        "projectPath": "C:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj",
         "packagesPath": "C:\\Users\\IdeaPad\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\obj\\",
+        "outputPath": "C:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ad+0+Wb886/7GZTAI+HT6T+fU1cDmtjZFZI8mi1B0PIzZk608FTwfyDfE+Q4uJEVA8PpK36dOhQmFOXwcIHWYg==",
+  "dgSpecHash": "jIJf8FmwYXc1K88aNjU+L5ZDXxtLnEBQYNNbShOWX8KeaEECUUuSElTkmkQ0RFAxsX2pxfSpfO1dQpR3mgmdOQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj",
+  "projectFilePath": "C:\\Users\\IdeaPad\\OneDrive\\Documenti\\MyDb\\MyDb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IdeaPad\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\IdeaPad\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
